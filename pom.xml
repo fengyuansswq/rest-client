@@ -28,7 +28,12 @@
         <httpclient.version>4.5.1</httpclient.version>
         <guava.version>19.0</guava.version>
         <servlet.version>2.5</servlet.version>
+        <bsf.version>3.1</bsf.version>
+        <cglib.version>2.2</cglib.version>
         <asm.version>3.1</asm.version>
+        <aspectj.version>1.7.3</aspectj.version>
+        <jackson.version>2.0.6</jackson.version>
+        <jcache.version>0.4</jcache.version>
         <spring.session.version>1.1.1.RELEASE</spring.session.version>
 
         <!-- JDBC Driver -->
@@ -235,6 +240,13 @@
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpclient</artifactId>
             <version>${httpclient.version}</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${jackson.version}</version>
         </dependency>
 
         <!-- JDBC Driver -->
