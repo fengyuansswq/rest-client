@@ -1,5 +1,9 @@
 package com.sean.client;
 
+import com.sean.client.exception.HttpInvokeException;
+import com.sean.client.model.SeanHttpRequest;
+import com.sean.client.model.SeanHttpResponse;
+
 import java.io.Serializable;
 
 /**

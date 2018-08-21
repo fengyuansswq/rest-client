@@ -11,35 +11,35 @@ import java.io.Serializable;
  */
 public final class SeanHttpRequest<T extends Serializable> {
     /** Http请求数据 */
-    private T                   request;
+    private T               request;
 
     /** Http请求地址 */
-    private String              endpoint;
+    private String          endpoint;
 
     /** Http method */
-    private HttpMethod requestMethod;
+    private HttpMethod      requestMethod;
 
     /** 请求参数序列化方法 */
-    private SerializeMethod     requestSerializeMethod;
+    private SerializeMethod requestSerializeMethod;
 
     /** 应答数据序列化方法 */
-    private SerializeMethod     responseSerializeMethod;
+    private SerializeMethod responseSerializeMethod;
 
     /** 参数传递方式 */
-    private ParameterType       parameterType;
+    private ParameterType   parameterType;
 
     /** Object url入参的Key */
-    private String              urlObjectKey;
+    private String          urlObjectKey;
 
     /** 日期格式 */
-    private String              dateFormat;
+    private String          dateFormat;
 
     /** URL参数是否需要编码*/
-    private boolean             encoded;
+    private boolean         encoded;
 
     /** URL参数编码字符集 ，默认UTF-8*/
-    private String              charset = "UTF-8";
+    private String          charset = "UTF-8";
 
     /** 返回体编码字符集,默认使用响应头编码 */
-    private String              rCharset ;
+    private String          rCharset;
 }
