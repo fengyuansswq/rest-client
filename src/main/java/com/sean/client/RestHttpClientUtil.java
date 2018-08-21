@@ -25,7 +25,7 @@ import java.security.NoSuchAlgorithmException;
  * @version Id:,v0.1 2018/8/20 下午5:59 sean Exp $
  * @description
  */
-public class RestClient {
+public class RestHttpClientUtil {
 
 
     public static CloseableHttpClient acceptsUntrustedCertsHttpClient() throws KeyStoreException, NoSuchAlgorithmException, KeyManagementException {

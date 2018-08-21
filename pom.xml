@@ -32,7 +32,9 @@
         <cglib.version>2.2</cglib.version>
         <asm.version>3.1</asm.version>
         <aspectj.version>1.7.3</aspectj.version>
-        <jackson.version>2.0.6</jackson.version>
+        <fastjson.version>1.2.7</fastjson.version>
+        <xstream.version>1.4.8</xstream.version>
+        <jackson.version>2.8.11</jackson.version>
         <jcache.version>0.4</jcache.version>
         <spring.session.version>1.1.1.RELEASE</spring.session.version>
 
@@ -242,6 +244,18 @@
             <version>${httpclient.version}</version>
         </dependency>
 
+        <!-- Serializer -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>${fastjson.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.thoughtworks.xstream</groupId>
+            <artifactId>xstream</artifactId>
+            <version>${xstream.version}</version>
+        </dependency>
 
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>

@@ -23,7 +23,7 @@ public class ClientTest {
     public static void main(String[] args) {
         CloseableHttpClient httpClient = null;
         try {
-            httpClient = RestClient.acceptsUntrustedCertsHttpClient();
+            httpClient = RestHttpClientUtil.acceptsUntrustedCertsHttpClient();
             HttpComponentsClientHttpRequestFactory clientHttpRequestFactory = new HttpComponentsClientHttpRequestFactory(httpClient);
             RestTemplate restTemplate = new RestTemplate(clientHttpRequestFactory);
             String result = restTemplate.getForObject("http://www.baidu.com", String.class);
