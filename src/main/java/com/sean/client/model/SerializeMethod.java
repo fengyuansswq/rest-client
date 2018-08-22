@@ -1,9 +1,6 @@
 package com.sean.client.model;
 
-import com.sean.client.serializer.FastJsonSerializer;
-import com.sean.client.serializer.JacksonSerializer;
-import com.sean.client.serializer.NoneSerializer;
-import com.sean.client.serializer.Serializer;
+import com.sean.client.serializer.*;
 
 /**
  * @author sean
@@ -11,14 +8,14 @@ import com.sean.client.serializer.Serializer;
  * @description
  */
 public enum SerializeMethod {
-    /** none */
-    NONE_SERIALIZER(NoneSerializer.getInstance()),
-    /** fastjson */
-    FASTJSON_SERIALIZER(FastJsonSerializer.getInstance()),
-    /** Jackson */
-    JACKSON_SERIALIZER(JacksonSerializer.getInstance()),
-    /** xstream dict */
-    XSTREAM_DICT_SERIALIZER(XStreamDictSerializer.getInstance());
+                             /** none */
+                             NONE_SERIALIZER(NoneSerializer.getInstance()),
+                             /** fastjson */
+                             FASTJSON_SERIALIZER(FastJsonSerializer.getInstance()),
+                             /** Jackson */
+                             JACKSON_SERIALIZER(JacksonSerializer.getInstance()),
+                             /** xstream dict */
+                             XSTREAM_DICT_SERIALIZER(XStreamDictSerializer.getInstance());
 
     private Serializer serializer;
 

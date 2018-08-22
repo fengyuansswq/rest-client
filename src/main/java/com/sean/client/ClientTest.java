@@ -26,7 +26,7 @@ public class ClientTest {
             httpClient = RestHttpClientUtil.acceptsUntrustedCertsHttpClient();
             HttpComponentsClientHttpRequestFactory clientHttpRequestFactory = new HttpComponentsClientHttpRequestFactory(httpClient);
             RestTemplate restTemplate = new RestTemplate(clientHttpRequestFactory);
-            String result = restTemplate.getForObject("http://www.baidu.com", String.class);
+            String result = restTemplate.getForObject("https://openapi.alipay.com/gateway.do", String.class);
             System.out.println(result);
         } catch (KeyStoreException e) {
 
@@ -36,6 +36,5 @@ public class ClientTest {
         } catch (KeyManagementException e) {
             logger.error(Throwables.getStackTraceAsString(e));
         }
-
     }
 }
